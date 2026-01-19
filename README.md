@@ -2,7 +2,6 @@
 
 **FlowSentinel** is a high-performance, process-centric Linux network monitor and forensics tool. It provides a beautiful, interactive Terminal User Interface (TUI) to track network traffic at the process level, allowing you to identify exactly which application is talking to which server, how much bandwidth it consumes, and what domains it's resolving.
 
-Unlike generic tools like `iftop` or `nethogs`, FlowSentinel performs **Deep Packet Inspection (DPI)** to extract metadata like TLS SNI and HTTP Host headers, providing instant context without needing manual WHOIS lookups.
 
 ---
 
