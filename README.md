@@ -61,7 +61,12 @@ sudo flowsentinel
 ```
 
 ---
+## 📸 Screenshots 
 
+<img width="1877" height="921" alt="image" src="https://github.com/user-attachments/assets/9ec958c3-0734-4678-91c4-e8b11d3135f0" />
+<img width="1869" height="919" alt="image" src="https://github.com/user-attachments/assets/8da0e5fe-26db-43bf-a1a6-5f16c95c9e3b" />
+
+---
 ## 🚀 Usage
 
 ### Interactive TUI Mode
