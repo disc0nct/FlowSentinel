@@ -11,7 +11,7 @@ Unlike generic tools like `iftop` or `nethogs`, FlowSentinel performs **Deep Pac
 ### 🚀 Real-time Monitoring
 - **Process-Centric View**: Aggregate traffic by PID, UID, and process name.
 - **Bandwidth Stats**: Live Bytes/s and Packets/s metrics for every process.
-- **Sparklines**: 60-second bandwidth history graphs in the detail view.
+- **Sparklines**: 10-second bandwidth history graphs in the detail view.
 - **Connection Tracking**: Live list of TCP/UDP connections with state (ESTABLISHED, LISTEN, etc.).
 
 ### 🔍 Deep Visibility (DPI)
@@ -55,10 +55,8 @@ cd FlowSentinel
 cargo build --release
 sudo ./target/release/flowsentinel
 
-# Option B: Build and install as Debian package
-cargo install cargo-deb
-cargo deb
-sudo dpkg -i target/debian/flowsentinel_1.0.0-1_amd64.deb
+# Option B: Install through Debian package
+wget https://github.com/disc0nct/FlowSentinel/releases/download/v1.0.0/flowsentinel_1.0.0-1_amd64.deb && sudo dpkg -i flowsentinel_1.0.0-1_amd64.deb
 sudo flowsentinel
 ```
 
