@@ -1,4 +1,4 @@
-# 📡 FlowSentinel
+<img width="1024" height="1024" alt="FlowSentinel" src="https://github.com/user-attachments/assets/77826975-19db-4256-9dc5-9fb6cfc64b0d" />
 
 **FlowSentinel** is a high-performance, process-centric Linux network monitor and forensics tool. It provides a beautiful, interactive Terminal User Interface (TUI) to track network traffic at the process level, allowing you to identify exactly which application is talking to which server, how much bandwidth it consumes, and what domains it's resolving.
 
