@@ -2,6 +2,8 @@
 
 **FlowSentinel** is a high-performance, process-centric Linux network monitor and forensics tool. It provides a beautiful, interactive Terminal User Interface (TUI) to track network traffic at the process level, allowing you to identify exactly which application is talking to which server, how much bandwidth it consumes, and what domains it's resolving.
 
+Unlike generic tools like `iftop` or `nethogs`, FlowSentinel performs **Deep Packet Inspection (DPI)** to extract metadata like TLS SNI and HTTP Host headers, providing instant context without needing manual WHOIS lookups.
+
 ---
 
 ## ✨ Key Features
@@ -40,18 +42,24 @@
 - **libpcap-dev** & **libsqlite3-dev**: Required for packet capture and logging.
 - **Rust**: MSRV 1.75+.
 
-### Build from Source
+### Build and Install
 ```bash
 # Install dependencies (Ubuntu/Debian)
 sudo apt update && sudo apt install libpcap-dev libsqlite3-dev
 
-# Clone and build
+# Clone the repository
 git clone https://github.com/your-username/FlowSentinel.git
 cd FlowSentinel
-cargo build --release
 
-# Run with root privileges
+# Option A: Build and run binary directly
+cargo build --release
 sudo ./target/release/flowsentinel
+
+# Option B: Build and install as Debian package
+cargo install cargo-deb
+cargo deb
+sudo dpkg -i target/debian/flowsentinel_1.0.0-1_amd64.deb
+sudo flowsentinel
 ```
 
 ---
